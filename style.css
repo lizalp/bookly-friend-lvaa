@@ -1,0 +1,98 @@
+
+/*Menu navbar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.navbar {
+    background-color: #da627d!important;
+    border-radius: 10px;
+}
+
+/*Carrusel*/
+@media screen and (min-width: 600px){
+    .cards-wrapper{
+        display: flex;
+    }
+    
+    .card{
+        margin: 0 .5em;
+        width: calc(100%/3);
+        border: none;
+        border-radius: 0;
+        box-shadow: 2px 6px 8px 0 #9d8189;
+    }
+    .image-wrapper{
+        height: 22vw;
+        margin: 0 auto;
+    }
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgb(204, 204, 204);
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev span, 
+.carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+@media screen and (max-width: 599px){   
+    .card:not(:first-child){
+        display: contents;
+    }
+}
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.btn {
+    background-color: #e5989b;
+    border-color: #e5989b;
+}
+
+#seccRecomendaciones{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#seccResenas{
+    padding-bottom: 5%;
+    text-align: center;
+}
+/*Queremos leerte*/
+#seccOpinion{
+    display: flex;
+    background-color: #fae0e4;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.horizontal-align-item{
+    /*height:100%;
+    width:50%;
+    display:table-cell;
+    padding-left: 10%;*/
+    background-color: #fae0e4 ;
+    padding: 2em;
+    margin: 1em;
+
+}
+  
